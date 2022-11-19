@@ -1,0 +1,163 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Annotator
+    </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!----css3---->
+    <link rel="stylesheet" href="custom.css">
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--google material icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="body-overlay"></div>
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><span>   ANNOTATOR</span></h3>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="#">
+                    <a href="upload dataset.html" class="dashboard"><i class="material-icons">cloud</i><span>Upload Dataset</span></a>
+                </li>
+                <li class="#">
+                    <a href="dashboard.html" class="dashboard"><i class="material-icons">equalizer</i><span>Dashboard</span></a>
+                </li>
+                <li class="#">
+                    <a href="report.html" class="dashboard"><i class="material-icons">border_color</i><span>Report</span></a>
+                </li>
+                <li class="#">
+                    <a href="story.html" class="dashboard"><i class="material-icons">content_copy</i><span>Story</span></a>
+                </li>
+                <li class="#">
+                    <a href="help.html" class="dashboard"><i class="material-icons">help</i><span>Help & Support</span></a>
+                </li>
+                <li class="#">
+                    <a href="login.html" class="dashboard"><i class="material-icons">logout</i><span>Logout</span></a>
+                </li>
+                <div class="small-screen navbar-display">
+                    <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
+                        <a href="#homeSubmenu0" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="material-icons">notifications</i><span> 2 notification</span></a>
+                        
+                    </li>
+                </div>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <div class="top-navbar">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
+                        <span class="material-icons">arrow_back_ios</span>
+                    </button>
+
+                        <a class="navbar-brand" href="help.html"> Help & Support </a>
+
+                        <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="material-icons">more_vert</span>
+                    </button>
+
+                        <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="dropdown nav-item active">
+                                    <a href="#" class="nav-link" data-toggle="dropdown">
+                                        <span class="material-icons">notifications</span>
+                                        <span class="notification">2</span>
+                                    </a>
+                                    
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="help.html">
+                                        <span class="material-icons">help</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span class="material-icons">person</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="main-content">
+                <div class="comment-box">
+                    <h2>Comments</h2>
+                    <form>
+                        <input type="text" name="full-name" placeholder="Full Name">
+                        <input type="email" name="email" placeholder="Email Id">
+                        <textarea name="comment" placeholder="Type your comment"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <nav class="d-flex">
+                                    <ul class="m-0 p-0">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#"> Company</a></li>
+                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="copyright d-flex justify-content-end"> &copy 2022 Design by Annotator </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('active');
+            });
+
+            $('.more-button,.body-overlay').on('click', function() {
+                $('#sidebar,.body-overlay').toggleClass('show-nav');
+            });
+
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>
